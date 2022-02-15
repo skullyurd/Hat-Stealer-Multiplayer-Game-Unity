@@ -41,6 +41,10 @@ MonoBehaviour:
   - RespawnSpaceship
   - ChangeScene
   - UpdateLobbyUI
+  - ImInGame
+  - Initialize
+  - GiveHat
+  - WinGame
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
