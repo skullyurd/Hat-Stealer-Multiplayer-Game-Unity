@@ -93,6 +93,7 @@ public class Gamemanager : MonoBehaviourPunCallbacks
     {
         gameEnded = true;
         PlayerControllerScript player = GetPlayer(playerId);
+        GameUI.instance.SetWinText(player.photonPlayer.NickName);
 
         Invoke("GoBackToMenu", 3.0f);
     }

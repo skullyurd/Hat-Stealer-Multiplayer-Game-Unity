@@ -147,7 +147,8 @@ MonoBehaviour:
   Id: 0
   moveSpeed: 5
   jumpForce: 7
-  hatbject: {fileID: 3343181027374101738}
+  hatObject: {fileID: 3343181027374101738}
+  curHatTime: 0
   rig: {fileID: 3343181025747953365}
 --- !u!114 &-3471029710431157368
 MonoBehaviour:
@@ -169,6 +170,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 3343181025747953362}
+  - {fileID: 3343181025747953363}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0

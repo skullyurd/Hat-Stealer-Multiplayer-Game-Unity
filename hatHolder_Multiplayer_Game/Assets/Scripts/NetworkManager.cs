@@ -14,12 +14,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         {
             instance = this;
             DontDestroyOnLoad(this);
-            return;
-        }
-        else
-        {
-            Destroy(this);
-            return;
         }
     }
 

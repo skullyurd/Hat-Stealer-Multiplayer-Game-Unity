@@ -13,11 +13,11 @@ public class PlayerControllerScript : MonoBehaviourPunCallbacks, IPunObservable
     [SerializeField] private float jumpForce;
     [SerializeField] private GameObject hatObject;
 
-    [HideInInspector] private float curHatTime;
+    [HideInInspector] public float curHatTime;
 
     [Header("Components")]
     [SerializeField] private Rigidbody rig;
-    [SerializeField] private Player photonPlayer;
+    [SerializeField] public Player photonPlayer;
 
     [PunRPC]
     public void Initialize(Player player)
@@ -57,12 +57,13 @@ public class PlayerControllerScript : MonoBehaviourPunCallbacks, IPunObservable
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 TryJump();
-
-                if (hatObject.activeInHierarchy)
-                {
-                    curHatTime += Time.deltaTime;
-                }
             }
+
+            if (hatObject.activeInHierarchy)
+            {
+                curHatTime += Time.deltaTime;
+            }
+
         }
     }
 
